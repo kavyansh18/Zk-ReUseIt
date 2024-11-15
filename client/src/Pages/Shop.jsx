@@ -330,7 +330,7 @@ const Shop = () => {
         <select
           value={selectedCategory}
           onChange={handleCategoryChange}
-          className="ml-2 rounded border border-blue-gray-200 bg-transparent px-3 py-2 rounded-lg text-sm font-normal text-white outline outline-0 transition-all focus:border-2 focus:border-blue-500 focus:outline-0 bg-black text-white"
+          className="ml-2  border border-blue-gray-200 bg-transparent px-3 py-2 rounded-lg text-sm font-normal  outline outline-0 transition-all focus:border-2 focus:border-blue-500 focus:outline-0 bg-black text-white"
         >
           <option value="" disabled>
             Select a category

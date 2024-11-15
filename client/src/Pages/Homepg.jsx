@@ -35,9 +35,6 @@ export function AuroraBackgroundDemo() {
         <div className="flex mt-20 gap-10">
           <div>
         <img className="w-[29rem]" src={logo} alt="" />
-        {/* <div className="text-3xl md:text-7xl font-bold text-white text-center">
-          Zk-ReUseIt
-        </div> */}
         <div className="font-extralight text-base md:text-4xl text-neutral-200 py-4 ml-4">
          <TextGenerateEffect words={words2} />
          <TextGenerateEffect words={words3} />

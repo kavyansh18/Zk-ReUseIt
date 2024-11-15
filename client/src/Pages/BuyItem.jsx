@@ -12,15 +12,15 @@ const BuyItem = () => {
 
   const [url, setUrl] = useState('')
   
-  const APP_ID = "0x2E077cAa343478Bd397615FcdF89CaF61CdCEA15" //TODO: replace with your applicationId
+  const APP_ID = "0x2E077cAa343478Bd397615FcdF89CaF61CdCEA15" 
   const reclaimClient = new Reclaim.ProofRequest(APP_ID)
  
   async function generateVerificationRequest() {
     try {
-      const providerId = '1bba104c-f7e3-4b58-8b42-f8c0346cdeab'; // Replace with actual providerId
+      const providerId = '1bba104c-f7e3-4b58-8b42-f8c0346cdeab'; 
   
       reclaimClient.addContext(
-        ('user\'s address'), // Replace with actual user address
+        ('user\'s address'), 
         ('for acmecorp.com on 1st january')
       );
   
@@ -38,11 +38,9 @@ const BuyItem = () => {
       await reclaimClient.startSession({
         onSuccessCallback: proofs => {
           console.log('Verification success', proofs);
-          // Your business logic here
         },
         onFailureCallback: error => {
           console.error('Verification failed', error);
-          // Your business logic here to handle the error
         }
       });
     } catch (error) {
@@ -127,7 +125,7 @@ const BuyItem = () => {
         <QRCode value={url} />
       )}
     </div>
-    {/* <button onClick={handleQRCode} className="text-white flex justify-center items-center w-full">verify</button> */}
+
     </div>
   );
 };
